@@ -11,12 +11,12 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        bat 'cd npm install'
+        bat 'npm i'
       }
     }
     stage('Run tests') {
       steps {
-        bat 'cd npm t'
+        bat 'npm t'
       }
     }
   }
